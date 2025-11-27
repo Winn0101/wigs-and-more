@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: your-dockerhub-username/cart-service:latest
+        image: winn10/cart-service:fd6e0aee1286585b068228f16558ca07bf2f3d87
         ports:
         - containerPort: 3002
         env:
