@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout-service
+  namespace: wigs-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: checkout-service
+  template:
+    metadata:
+      labels:
+        app: checkout-service
+    spec:
+      containers:
+      - name: checkout
+        image: your-dockerhub-username/checkout-service:latest
+        ports:
+        - containerPort: 3003
+        env:
+        - name: MONGODB_URI
+          value: "mongodb://mongodb:27017/wigs-checkout"
+        - name: CART_SERVICE_URL
+          value: "http://cart-service:3002"
+        - name: PORT
+          value: "3003"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3003
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 3003
+          initialDelaySeconds: 10
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkout-service
+  namespace: wigs-app
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "3003"
+spec:
+  selector:
+    app: checkout-service
+  ports:
+  - port: 3003
+    targetPort: 3003
+  type: ClusterIP

@@ -1,0 +1,151 @@
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .checkout-form, .order-summary {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .checkout-form h2, .order-summary h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .input-field.error {
+    border-color: #e74c3c;
+  }
+  
+  .error-message {
+    display: block;
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .btn-secondary {
+    width: 100%;
+    background-color: #95a5a6;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #7f8c8d;
+  }
+  
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .summary-items {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 2rem;
+    padding-right: 0.5rem;
+  }
+  
+  .summary-item {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  .summary-item:last-child {
+    border-bottom: none;
+  }
+  
+  .summary-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .summary-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .summary-item-details h4 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+  }
+  
+  .summary-item-details p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .summary-item-price {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 1.1rem;
+  }
+  
+  .summary-total {
+    border-top: 2px solid #ecf0f1;
+    padding-top: 1rem;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .summary-row.total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 0.5rem;
+  }
+  
+  @media (max-width: 968px) {
+    .checkout-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .order-summary {
+      order: -1;
+    }
+  }

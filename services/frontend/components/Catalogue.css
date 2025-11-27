@@ -1,0 +1,116 @@
+.catalogue-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .catalogue-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .catalogue-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .wigs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .wig-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .wig-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .wig-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wig-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .no-image {
+    color: #95a5a6;
+    font-size: 1.2rem;
+  }
+  
+  .wig-details {
+    padding: 1.5rem;
+  }
+  
+  .wig-details h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .wig-description {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  .wig-category {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .wig-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .wig-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .btn-disabled {
+    background-color: #95a5a6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+  
+  .loading, .error, .empty-catalogue {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }
