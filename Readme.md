@@ -656,7 +656,7 @@ POST /api/checkout
 {
   "customerName": "John Doe",
   "customerEmail": "john@example.com",
-  "customerPhone": "+1234567890",
+  "customerPhone": "+123456788990",
   "items": [
     {
       "wigId": "123",
