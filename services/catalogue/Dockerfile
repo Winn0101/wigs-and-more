@@ -12,11 +12,3 @@ RUN mkdir -p uploads
 EXPOSE 3001
 
 CMD ["npm", "start"]
-```
-
-**`services/catalogue/.dockerignore`**
-```
-node_modules
-npm-debug.log
-.env
-uploads
