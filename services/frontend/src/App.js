@@ -65,7 +65,7 @@ function App() {
 
         <footer className="footer">
           <div className="container">
-            <p>&copy; 2025 Wigs and More. All rights reserved.</p>
+            <p>&copy; 2025 Wigs and More. All Rights Reserved.</p>
           </div>
         </footer>
       </div>
