@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: winn10/cart-service:fd6e0aee1286585b068228f16558ca07bf2f3d87
+        image: winn10/cart-service:91e7660d096c052ff289c9b7f29f466454055e27
         ports:
         - containerPort: 3002
         env:
