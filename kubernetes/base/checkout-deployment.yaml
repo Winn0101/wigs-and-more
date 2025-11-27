@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: checkout
-        image: winn10/checkout-service:76cdf2733abbbe86d46e82f40fb22d3dbbd2c785
+        image: winn10/checkout-service:247eaa13073ab434e974bb589b3bdf2639e3ec0f
         ports:
         - containerPort: 3003
         env:
