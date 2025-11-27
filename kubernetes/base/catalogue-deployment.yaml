@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: winn10/catalogue-service:de05d8df6519b2c08baf6674fdc0153eca5f40c0
+        image: winn10/catalogue-service:e47998ea9bd7e1e80217f14781a7e245353fbfc8
         ports:
         - containerPort: 3001
         env:
