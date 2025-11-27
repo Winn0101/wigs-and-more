@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: your-dockerhub-username/catalogue-service:latest
+        image: winn10/catalogue-service:91e7660d096c052ff289c9b7f29f466454055e27
         ports:
         - containerPort: 3001
         env:
