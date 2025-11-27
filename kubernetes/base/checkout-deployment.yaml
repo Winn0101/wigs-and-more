@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: checkout
-        image: your-dockerhub-username/checkout-service:latest
+        image: winn10/checkout-service:91e7660d096c052ff289c9b7f29f466454055e27
         ports:
         - containerPort: 3003
         env:
